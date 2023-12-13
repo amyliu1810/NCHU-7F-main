@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/web-icon.PNG">
+    <title>中興大學綜合大樓7樓</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div id="loading-mask" class="align-items-center justify-content-center">
+        <div id="loading">
+            <div id="loading-bar">
+                <div id="loading-fill"></div>
+            </div>
+            <h5 id="loading-text">0%</h5>
+        </div>
+    </div>
+    <div id="loading-mask-2" class="align-items-center justify-content-center">
+        <div id="loading">
+            <div id="loading-bar-2"></div>
+            <h5>100%</h5>
+        </div>
+
+    </div>
+    <nav>
+        <div class=" container-lg px-4 h-100">
+            <div class="nav-box m-auto gap-3 d-flex align-items-center h-100">
+                <button type="button" class="home-btn home-mobile justify-content-center align-items-center">
+                    <iconify-icon icon="ic:round-home"></iconify-icon>
+                </button>
+                <button type="button" class="home-btn home-pc fw-bold">HOME</button>
+                <input type="checkbox" id="menu-switch" hidden>
+                <label for="menu-switch" class="menu-btn menu-mobile justify-content-center align-items-center">
+                    <iconify-icon icon="ion:menu"></iconify-icon>
+                </label>
+                <label for="menu-switch" class="menu-btn menu-pc fw-bold">MENU</label>
+                <menu class="align-items-center">
+                    <i class="left-btn bi bi-caret-left-fill"></i>
+                    <div class="menu-view rounded-2">
+                        <div class="rooms d-flex">
+                            <button type="button" class="room-btn fw-bold"
+                                onclick="location.href='room.html#r701'">701</button>
+                            <button type="button" class="room-btn fw-bold"
+                                onclick="location.href='room.html#r706'">706</button>
+                            <button type="button" class="room-btn fw-bold"
+                                onclick="location.href='room.html#r707'">707</button>
+                            <button type="button" class="room-btn fw-bold"
+                                onclick="location.href='room.html#r708'">708</button>
+                            <button type="button" class="room-btn fw-bold"
+                                onclick="location.href='room.html#r709'">709</button>
+                            <button type="button" class="room-btn fw-bold"
+                                onclick="location.href='room.html#r711'">711</button>
+                            <button type="button" class="room-btn fw-bold"
+                                onclick="location.href='room.html#r713'">713</button>
+                            <button type="button" class="room-btn fw-bold"
+                                onclick="location.href='room.html#r716'">716</button>
+                            <button type="button" class="room-btn fw-bold"
+                                onclick="location.href='room.html#r717'">717</button>
+                            <button type="button" class="room-btn fw-bold"
+                                onclick="location.href='room.html#r720'">720</button>
+                            <button type="button" class="room-btn fw-bold"
+                                onclick="location.href='room.html#r721'">721</button>
+                            <button type="button" class="room-btn fw-bold"
+                                onclick="location.href='room.html#r722'">722</button>
+                            <button type="button" class="room-btn fw-bold"
+                                onclick="location.href='room.html#r723'">723</button>
+                        </div>
+                    </div>
+                    <i class="right-btn bi bi-caret-right-fill"></i>
+                </menu>
+            </div>
+        </div>
+    </nav>
+    <main class="container-lg">
+        <div class="content row">
+            <div class="intro col-3 ps-0 pe-3">
+                <h3 class="w-100 py-3 px-1 mb-3 fw-bold text-center rounded-3">綜合大樓-7樓導覽地圖</h3>
+                <div class="intro-text w-100 rounded-3">
+                    中興大學綜合大樓七樓是一個豐富多元的學術和藝術交匯之地。樓層涵蓋了創新產業學院、陶土教室、電腦教室和系學會辦公室等，為學子們創造多樣的學術和創意環境。<br>
+                    這裡提供了豐富的教育資源和培訓機會，課程著重於開拓多元與創新思考，期許學生們在這個高度競爭的時代中搶得先機。
+                    綜合大樓七樓的各部門共同形成一個繁榮活躍的中心，提供了多樣化的學習和發展機會，豐富了學生的學術和藝術體驗。
+                </div>
+            </div>
+            <div class="map-mask col-9 p-5 row rounded-3 justify-content-center align-items-center">
+                <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+                    <img src="./img/rotate.png" alt="" class="py-5">
+                    <h3>旋轉</h3>
+                    <h6 class="text-center">
+                        在地圖附近空白處長按滑鼠左鍵<br>
+                        可拖曳旋轉畫面
+                    </h6>
+                </div>
+                <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+                    <iconify-icon icon="fluent:cursor-hover-20-filled" class="pt-3 pb-4"></iconify-icon>
+                    <h3>點擊</h3>
+                    <h6 class="text-center">
+                        房間變色為被選取狀態<br>
+                        可點擊跳轉
+                    </h6>
+                </div>
+                <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+                    <iconify-icon icon="iconoir:mouse-scroll-wheel" class="pt-3 pb-4"></iconify-icon>
+                    <h3>縮放</h3>
+                    <h6 class="text-center">
+                        滾動滑鼠滾輪<br>
+                        可放大縮小地圖
+                    </h6>
+                </div>
+                <div class="col text-center">
+                    <h4>點擊空白處開始操作</h4>
+                </div>
+            </div>
+            <div id="carouselExampleCaptions" class="map-mask-mob carousel slide rounded-3">
+                <div class="mask-close">
+                    <iconify-icon icon="ep:close"></iconify-icon>
+                </div>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/rotate-mob.png" class="mx-auto p-5 d-block" alt="...">
+                        <div class="carousel-caption">
+                            <h5>旋轉</h5>
+                            <p>在地圖附近空白處長按並拖曳，可旋轉畫面</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/click-mob.png" class="mx-auto p-5 d-block" alt="...">
+                        <div class="carousel-caption">
+                            <h5>點擊</h5>
+                            <p>點擊房間前往觀看介紹</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/scale-mob.png" class="mx-auto p-5 d-block" alt="...">
+                        <div class="carousel-caption">
+                            <h5>縮放移動</h5>
+                            <p>兩指長按開合/滑動，可放大縮小/移動地圖</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div id="map" class="col-9 rounded-3 p-0">
+            </div>
+            <div class="intro-2 w-100 rounded-3">
+                <h3 class="w-100 pt-4 px-1 fw-bold text-center">綜合大樓-7樓導覽地圖</h3>
+                <div class="intro-text w-100">
+                    中興大學綜合大樓七樓是一個豐富多元的學術和藝術交匯之地。樓層涵蓋了創新產業學院、陶土教室、電腦教室和系學會辦公室等，為學子們創造多樣的學術和創意環境。<br>
+                    這裡提供了豐富的教育資源和培訓機會，課程著重於開拓多元與創新思考，期許學生們在這個高度競爭的時代中搶得先機。
+                    綜合大樓七樓的各部門共同形成一個繁榮活躍的中心，提供了多樣化的學習和發展機會，豐富了學生的學術和藝術體驗。
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="flex-column justify-content-center align-items-center">
+        <div class="footer-box justify-content-center align-items-center">
+            <h5>製作團隊 - 現在大家都不說話</h5>
+            <iconify-icon class="line" icon="pepicons-pencil:line-y"></iconify-icon>
+            <h5>許莛湘</h5>
+            <iconify-icon class="line" icon="pepicons-pencil:line-y"></iconify-icon>
+            <h5>張雅婷</h5>
+            <iconify-icon class="line" icon="pepicons-pencil:line-y"></iconify-icon>
+            <h5>張寶聰</h5>
+            <iconify-icon class="line" icon="pepicons-pencil:line-y"></iconify-icon>
+            <h5>劉晏如</h5>
+            <iconify-icon class="line" icon="pepicons-pencil:line-y"></iconify-icon>
+            <h5>葉佳玲</h5>
+            <a class="connect" href="https://www.iciil.nchu.edu.tw/course.php?typesn=44" target="_blank">聯絡興大</a>
+        </div>
+        <div class="footer-box-mob flex-column justify-content-center align-items-center">
+            <div class="footer-mob-up d-flex justify-content-center align-items-center">
+                <h5>製作團隊 - 現在大家都不說話</h5>
+                <iconify-icon class="line" icon="pepicons-pencil:line-y"></iconify-icon>
+                <a class="connect" href="https://www.iciil.nchu.edu.tw/course.php?typesn=44" target="_blank">聯絡興大</a>
+            </div>
+            <div class="footer-mob-down d-flex justify-content-center align-items-center">
+                <h5>許莛湘</h5>
+                <iconify-icon class="line" icon="pepicons-pencil:line-y"></iconify-icon>
+                <h5>張雅婷</h5>
+                <iconify-icon class="line" icon="pepicons-pencil:line-y"></iconify-icon>
+                <h5>張寶聰</h5>
+                <iconify-icon class="line" icon="pepicons-pencil:line-y"></iconify-icon>
+                <h5>劉晏如</h5>
+                <iconify-icon class="line" icon="pepicons-pencil:line-y"></iconify-icon>
+                <h5>葉佳玲</h5>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+    <!-- <version>須改為版本，可用latest找最新版 -->
+    <script type="importmap">
+            {
+            "imports": {
+                "three": "https://unpkg.com/three@latest/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@latest/examples/jsm/"
+            }
+            }
+        </script>
+    <script>
+        // nav內menu
+        const leftBtn = document.querySelector('.left-btn');
+        const rightBtn = document.querySelector('.right-btn');
+        const view = document.querySelector('.menu-view');
+        const rooms = document.querySelector('.rooms');
+
+        rightBtn.addEventListener('click', scrollRight);
+        leftBtn.addEventListener('click', scrollLeft);
+
+        function scrollRight() {
+            const allLength = 75.7 * 13 + 8.5 * 3;
+            const viewLength = view.clientWidth;
+            const leftMove = Math.abs(parseInt(window.getComputedStyle(rooms, null).left));// 取得rooms left的值
+            if (allLength < viewLength) return;
+            if (leftMove + viewLength + 75.7 * 3 >= allLength) {
+                rooms.style.left = '-' + (allLength - viewLength) + 'px';
+            } else {
+                rooms.style.left = '-' + (leftMove + (75.7 * 3 + 8.5)) + 'px'
+            }
+        };
+
+        function scrollLeft() {
+            const allLength = 75.7 * 13 + 8.5;
+            const viewLength = view.clientWidth;
+            const leftMove = Math.abs(parseInt(window.getComputedStyle(rooms, null)?.left));// 取得rooms left的值
+            if (allLength < viewLength) return;
+            if (leftMove + viewLength - (75.7 * 3) < viewLength) {
+                rooms.style.left = '0px';
+            } else {
+                rooms.style.left = '-' + (leftMove - (75.7 * 3)) + 'px'
+            }
+        };
+
+        // 關閉地圖遮罩
+        const mapMask = document.querySelector('.map-mask')
+        mapMask.addEventListener('click', () => {
+            mapMask.classList.add('hide')
+        })
+
+        const mapMaskMob = document.querySelector('.map-mask-mob')
+        const maskClose = document.querySelector('.mask-close')
+        maskClose.addEventListener('click', () => {
+            mapMaskMob.classList.add('hide')
+        })
+    </script>
+    <script type="module">
+        import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
+        import * as THREE from 'three';
+        import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+        const roomAll = ["701", "706", "707", "708", "709", "711", "713", "716", "717", "720", "721", "722", "723"]
+        const pos = document.getElementById('map');
+
+        let labelRenderer;
+        // 新增場景
+        const scene = new THREE.Scene();
+        // 新增攝影機
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        // 設置攝影機位置
+        camera.position.set(-0, 6, 5);
+        camera.rotation.set(-0.5, 0, 0)
+
+        // 新增渲染器
+        const renderer = new THREE.WebGLRenderer({
+            // antialias抗鋸齒 alpha為去背
+            alpha: true,
+            antialias: true,
+        });
+        renderer.setSize(pos.offsetWidth, pos.offsetHeight);
+
+        // 新增GLTFLoader
+        const loader = new GLTFLoader();
+        // 匯入物件(路徑, 加載完成後呼叫函數
+        loader.load(
+            './model/index.glb',
+            (object) => {
+                let all = object.scene
+                let root = object.scenes[0]
+                const root2 = root.children
+                scene.add(all)
+
+                // 以下為標籤寫在LOAD裡不然會因為不同步綁不到
+                // 各房間名稱標示
+                const Div701 = document.createElement('div');
+                const Div706 = document.createElement('div');
+                const Div707 = document.createElement('div');
+                const Div708 = document.createElement('div');
+                const Div709 = document.createElement('div');
+                const Div711 = document.createElement('div');
+                const Div713 = document.createElement('div');
+                const Div716 = document.createElement('div');
+                const Div717 = document.createElement('div');
+                const Div720 = document.createElement('div');
+                const Div721 = document.createElement('div');
+                const Div722 = document.createElement('div');
+                const Div723 = document.createElement('div');
+                const roomArr = [
+                    {
+                        el: Div701,
+                        x: -0.2,
+                        y: 0.3,
+                        z: 1.1,
+                    },
+                    {
+                        el: Div706,
+                        x: -1.2,
+                        y: 0.3,
+                        z: 0.5,
+                    },
+                    {
+                        el: Div707,
+                        x: -1.2,
+                        y: 0.3,
+                        z: 0,
+                    },
+                    {
+                        el: Div708,
+                        x: -0.7,
+                        y: 0.3,
+                        z: -0.6,
+                    },
+                    {
+                        el: Div709,
+                        x: -0.9,
+                        y: 0.3,
+                        z: -0.9,
+                    },
+                    {
+                        el: Div711,
+                        x: -0.6,
+                        y: 0.3,
+                        z: -0.9,
+                    },
+                    {
+                        el: Div713,
+                        x: -0.3,
+                        y: 0.3,
+                        z: -0.9,
+                    },
+                    {
+                        el: Div716,
+                        x: -0.3,
+                        y: 0.3,
+                        z: -0.6,
+                    },
+                    {
+                        el: Div717,
+                        x: 0.3,
+                        y: 0.3,
+                        z: -0.9,
+                    },
+                    {
+                        el: Div720,
+                        x: 0.2,
+                        y: 0.3,
+                        z: -0.6,
+                    },
+                    {
+                        el: Div721,
+                        x: 1.1,
+                        y: 0.3,
+                        z: -0.4,
+                    },
+                    {
+                        el: Div722,
+                        x: 1.1,
+                        y: 0.3,
+                        z: 0,
+                    },
+                    {
+                        el: Div723,
+                        x: 1.1,
+                        y: 0.3,
+                        z: 0.5,
+                    }
+                ]
+                roomArr.forEach(((item, index) => {
+                    // 房間編號設定
+                    item.el.textContent = roomAll[index];
+                    item.el.className = 'label';
+                    var label = new CSS2DObject(item.el);
+                    label.position.set(item.x, item.y, item.z);
+                    label.center.set(0, 0, 0);
+                    root2[0].children[(index + 1)].add(label);
+                    label.layers.set(0);
+                }))
+
+                // loading真假切換
+                const loading = document.getElementById('loading-mask');
+                loading.classList.add('hide');
+                const loadinganime = document.getElementById('loading-mask-2')
+                const loadinganime2 = document.getElementById('loading-bar-2')
+                loadinganime.style.animationPlayState = 'running'
+                loadinganime2.style.animationPlayState = 'running'
+                setTimeout(() => {
+                    loadinganime.classList.add('hide');
+                }, 1500);
+            },
+            // 以下為loading相關
+            function (load) {
+                const percent = load.loaded / load.total
+                const loading_text = document.getElementById('loading-text')
+                const loading_fill = document.getElementById('loading-fill')
+                loading_text.innerHTML = Math.floor(percent * 100) + '%'
+                loading_fill.style.width = percent * 282 + "px"
+            }
+        )
+        // POS上面有宣告這裡的用途主要為將three.js綁在固定區域 label的為標籤的  
+        pos.appendChild(renderer.domElement);
+        labelRenderer = new CSS2DRenderer();
+        labelRenderer.setSize(pos.offsetWidth, pos.offsetHeight);
+        labelRenderer.domElement.style.position = 'absolute';
+        // labelrender的pointer如果不設為NONE的話會點不到模型
+        labelRenderer.domElement.style.pointer = 'none'
+        labelRenderer.domElement.style.top = '0px';
+        pos.appendChild(labelRenderer.domElement);
+        // 設置render loop(animate loop)
+        function animate() {
+            requestAnimationFrame(animate);
+            renderer.render(scene, camera);
+            labelRenderer.render(scene, camera);
+        }
+        // 定位滑鼠位置所需要的宣告
+        const raycaster = new THREE.Raycaster();
+        const pointer = new THREE.Vector2();
+
+        function onmodelclick(event) {
+            // 將滑鼠位置設定為裝置座標。x 和 y 方向取的範圍是 (-1 to +1)
+            pointer.x = (event.layerX / pos.offsetWidth) * 2 - 1;
+            pointer.y = - (event.layerY / pos.offsetHeight) * 2 + 1;
+            raycaster.setFromCamera(pointer, camera);
+
+            // raycaster獲得模型裡的物件
+            var intersects = raycaster.intersectObjects(scene.children);
+
+            if (roomAll.includes(intersects[0]?.object?.material?.name ?? '')) {
+                location.href = `room.html#r${intersects[0].object.material.name}`;
+                pos.style.cursor = 'pointer';
+            }
+        }
+        function pointermove(event) {
+            // 將滑鼠位置設定為裝置座標。x 和 y 方向取的範圍是 (-1 to +1)
+            pointer.x = (event.layerX / pos.offsetWidth) * 2 - 1;
+            pointer.y = - (event.layerY / pos.offsetHeight) * 2 + 1;
+            raycaster.setFromCamera(pointer, camera);
+
+            // raycaster獲得模型裡的物件
+            var intersects = raycaster.intersectObjects(scene.children);
+
+            if (roomAll.includes(intersects[0]?.object?.material?.name ?? '')) {
+                pos.style.cursor = 'pointer';
+            } else {
+                pos.style.cursor = 'auto';
+            }
+        }
+        let INTERSECTED;
+        function onPointerMove(event) {
+
+            // 將滑鼠位置設定為裝置座標。x 和 y 方向取的範圍是 (-1 to +1)
+            pointer.x = (event.layerX / pos.offsetWidth) * 2 - 1;
+            pointer.y = - (event.layerY / pos.offsetHeight) * 2 + 1;
+            raycaster.setFromCamera(pointer, camera);
+
+
+            const intersects = raycaster.intersectObjects(scene.children);
+            // 讓滑鼠指到的東西變色,沒指到的會回到原本狀態
+            if (intersects.length > 0) {
+
+                if (INTERSECTED != intersects[0].object) {
+
+                    if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
+                    INTERSECTED = intersects[0].object;
+                    INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
+                    INTERSECTED.material.emissive.setHex(0xff0000);
+
+                }
+
+            } else {
+
+                if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
+
+                INTERSECTED = null;
+
+            }
+
+            renderer.render(scene, camera);
+
+        }
+        pos.addEventListener('pointermove', pointermove);
+        pos.addEventListener('pointermove', onPointerMove);
+        pos.addEventListener('click', onmodelclick);
+        // // 新增控制器
+        const controls = new OrbitControls(camera, labelRenderer.domElement);
+        function resize() {
+            camera.aspect = pos.offsetWidth / pos.offsetHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(pos.offsetWidth, pos.offsetHeight);
+            labelRenderer.setSize(pos.offsetWidth, pos.offsetHeight);
+        }
+        window.addEventListener('resize', resize)
+        resize()
+        animate();
+    </script>
+</body>
+
+</html>

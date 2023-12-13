@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/web-icon.PNG">
+    <title>中興大學綜合大樓7樓</title>
+    <link rel="stylesheet" href="css/room.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/room.css">
+</head>
+
+<body>
+    <div class="page">
+        <div id="loading-mask" class="align-items-center justify-content-center">
+            <div id="loading">
+                <div id="loading-bar">
+                    <div id="loading-fill"></div>
+                </div>
+                <h5 id="loading-text">0%</h5>
+            </div>
+        </div>
+        <div id="loading-mask-2" class="align-items-center justify-content-center">
+            <div id="loading">
+                <div id="loading-bar-2"></div>
+                <h5>100%</h5>
+            </div>
+
+        </div>
+        <nav>
+            <div class=" container-lg px-4 h-100">
+                <div class="nav-box m-auto gap-3 d-flex align-items-center h-100">
+                    <button type="button" class="home-btn home-mobile justify-content-center align-items-center"
+                        onclick="location.href='index.html'">
+                        <iconify-icon icon="ic:round-home"></iconify-icon>
+                    </button>
+                    <button type="button" class="home-btn home-pc fw-bold"
+                        onclick="location.href='index.html'">HOME</button>
+                    <input type="checkbox" id="menu-switch" hidden>
+                    <label for="menu-switch" class="menu-btn menu-mobile justify-content-center align-items-center">
+                        <iconify-icon icon="ion:menu"></iconify-icon>
+                    </label>
+                    <label for="menu-switch" class="menu-btn menu-pc fw-bold">MENU</label>
+                    <menu class="align-items-center">
+                        <i class="left-btn bi bi-caret-left-fill"></i>
+                        <div class="menu-view rounded-2">
+                            <div class="rooms d-flex">
+                                <button type="button" class="room-btn fw-bold"
+                                    onclick="location.href='#r701'">701</button>
+                                <button type="button" class="room-btn fw-bold"
+                                    onclick="location.href='#r706'">706</button>
+                                <button type="button" class="room-btn fw-bold"
+                                    onclick="location.href='#r707'">707</button>
+                                <button type="button" class="room-btn fw-bold"
+                                    onclick="location.href='#r708'">708</button>
+                                <button type="button" class="room-btn fw-bold"
+                                    onclick="location.href='#r709'">709</button>
+                                <button type="button" class="room-btn fw-bold"
+                                    onclick="location.href='#r711'">711</button>
+                                <button type="button" class="room-btn fw-bold"
+                                    onclick="location.href='#r713'">713</button>
+                                <button type="button" class="room-btn fw-bold"
+                                    onclick="location.href='#r716'">716</button>
+                                <button type="button" class="room-btn fw-bold"
+                                    onclick="location.href='#r717'">717</button>
+                                <button type="button" class="room-btn fw-bold"
+                                    onclick="location.href='#r720'">720</button>
+                                <button type="button" class="room-btn fw-bold"
+                                    onclick="location.href='#r721'">721</button>
+                                <button type="button" class="room-btn fw-bold"
+                                    onclick="location.href='#r722'">722</button>
+                                <button type="button" class="room-btn fw-bold"
+                                    onclick="location.href='#r723'">723</button>
+                            </div>
+                        </div>
+                        <i class="right-btn bi bi-caret-right-fill"></i>
+                    </menu>
+                </div>
+            </div>
+        </nav>
+        <div class="mark">
+            <iconify-icon icon="material-symbols:stat-minus-2" width="80" height="80"></iconify-icon>
+        </div>
+        <main class="container-lg">
+            <section class="target"></section>
+            <div id="r723" class="first-room content row">
+                <div class="intro col-3 h-100 ps-0 pe-3 justify-content-center align-items-center">
+                    <h3 class="w-100 py-3 px-1 mb-3 fw-bold text-center rounded-3">723</h3>
+                    <div class="intro-text w-100 rounded-3">
+                        大電腦教室擁有最新的電腦設備，並能容納30人以上，寬敞明亮的空間和舒適的空調系統讓教學能順利進行。<br>
+                        學校準備了各式專業軟體和應用程式，豐富的資源讓學習更無阻力。電腦教室提供理論知識和實際操作同時進行的學習方式，幫助學生深入理解各專業所需的數位技術。
+                    </div>
+                    <div id="mini723" class="mini-map show">
+                        <img src="./img/mini-map-mask.png" alt="" class="mini-map-mask w-100">
+                        <img src="./img/723.jpg" alt="" class="w-100 ">
+                    </div>
+                    <dialog id="infoModal">
+                        <button id="close"><iconify-icon icon="ic:baseline-close"></iconify-icon></button>
+                        <div id="small"></div>
+                    </dialog>
+                </div>
+                <div id="map" class="col-9 rounded-3 p-0">
+                    <div class="gradient-mask w-100"></div>
+                    <div class="map-view"></div>
+                </div>
+                <div class="intro-box w-100 p-0" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <div class="intro-2 col-8 rounded-3 me-3">
+                        <h3 class="w-100 pt-4 px-1 text-center">723
+                            <div class="intro-text">
+                                大電腦教室擁有最新的電腦設備，並能容納30人以上，寬敞明亮的空間和舒適的空調系統讓教學能順利進行。<br>
+                                學校準備了各式專業軟體和應用程式，豐富的資源讓學習更無阻力。電腦教室提供理論知識和實際操作同時進行的學習方式，幫助學生深入理解各專業所需的數位技術。 </div>
+                        </h3>
+                    </div>
+                    <div class="mini-map-2 col">
+                        <img src="./img/723.jpg" alt="" class="w-100 ">
+                    </div>
+                </div>
+            </div>
+            <div id="r722" class="content row" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                <div class="intro col-3 h-100 ps-0 pe-3 justify-content-center align-items-center">
+                    <h3 class="w-100 py-3 px-1 mb-3 fw-bold text-center rounded-3">722</h3>
+                    <div class="intro-text w-100 rounded-3">
+                        大教室作為學習的中心，提供了基本但關鍵的設施和資源，有現代化的教學設備和空調系統，為30人以上的課程提供學習場所。<br>
+                        教室配置了投影機和資訊講台，方便老師進行課堂講解、展示教材和多媒體內容，支援多樣化的教學方式，同時促進互動和學習。可確保教學順利進行，提供了一個適合學生學習和老師教學的空間。
+                    </div>
+                    <div id="mini722" class="mini-map show">
+                        <img src="./img/mini-map-mask.png" alt="" class="mini-map-mask w-100">
+                        <img src="./img/722.jpg" alt="" class="w-100 ">
+                    </div>
+                    <dialog id="infoModal">
+                        <div id="small"></div>
+                    </dialog>
+                </div>
+                <div class="intro-box w-100 p-0" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <div class="intro-2 col-8 rounded-3 me-3">
+                        <h3 class="w-100 pt-4 px-1 text-center">722
+                            <div class="intro-text">
+                                大教室作為學習的中心，提供了基本但關鍵的設施和資源，有現代化的教學設備和空調系統，為30人以上的課程提供學習場所。<br>
+                                教室配置了投影機和資訊講台，方便老師進行課堂講解、展示教材和多媒體內容，支援多樣化的教學方式，同時促進互動和學習。可確保教學順利進行，提供了一個適合學生學習和老師教學的空間。
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="mini-map-2 col">
+                        <img src="./img/722.jpg" alt="" class="w-100 ">
+                    </div>
+                </div>
+            </div>
+            <div id="r721" class="content row" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                <div class="intro col-3 h-100 ps-0 pe-3 justify-content-center align-items-center">
+                    <h3 class="w-100 py-3 px-1 mb-3 fw-bold text-center rounded-3">721</h3>
+                    <div class="intro-text w-100 rounded-3">
+                        大教室配置投影設備及螢幕，並擁有功能完善的資訊講台，為30人以上的學生提供優越的學習場所。<br>
+                        支援多媒體展示，有助於教師呈現教材，提供豐富的視聽體驗，促進學生間的互動和學習氛圍，適合大班授課，打造開放的學習環境。
+                    </div>
+                    <div id="mini721" class="mini-map show">
+                        <img src="./img/mini-map-mask.png" alt="" class="mini-map-mask w-100">
+                        <img src="./img/721.jpg" alt="" class="w-100 ">
+                    </div>
+                    <dialog id="infoModal">
+                        <div id="small"></div>
+                    </dialog>
+                </div>
+                <div class="intro-box w-100 p-0" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <div class="intro-2 col-8 rounded-3 me-3">
+                        <h3 class="w-100 pt-4 px-1 text-center">721
+                            <div class="intro-text">
+                                大教室配置投影設備及螢幕，並擁有功能完善的資訊講台，為30人以上的學生提供優越的學習場所。<br>
+                                支援多媒體展示，有助於教師呈現教材，提供豐富的視聽體驗，促進學生間的互動和學習氛圍，適合大班授課，打造開放的學習環境。
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="mini-map-2 col">
+                        <img src="./img/721.jpg" alt="" class="w-100 ">
+                    </div>
+                </div>
+            </div>
+            <div id="r717" class="content row" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                <div class="intro col-3 h-100 ps-0 pe-3 justify-content-center align-items-center">
+                    <h3 class="w-100 py-3 px-1 mb-3 fw-bold text-center rounded-3">717</h3>
+                    <div class="intro-text w-100 rounded-3">
+                        電腦教室擁有大量設備，包括桌上型電腦及筆記型電腦，並設置了許多軟體和應用程式以支持不同類型的學習和開發需求。<br>
+                        學生在這裡學習軟體開發、圖形設計、多媒體製作以及其他與電腦技術相關的領域。通過練習和實際應用，學生可以更深入地理解並掌握電腦相關技能。
+                    </div>
+                    <div id="mini717" class="mini-map show">
+                        <img src="./img/mini-map-mask.png" alt="" class="mini-map-mask w-100">
+                        <img src="./img/717.jpg" alt="" class="w-100 ">
+                    </div>
+                    <dialog id="infoModal">
+                        <div id="small"></div>
+                    </dialog>
+                </div>
+                <div class="intro-box w-100 p-0" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <div class="intro-2 col-8 rounded-3 me-3">
+                        <h3 class="w-100 pt-4 px-1 text-center">717
+                            <div class="intro-text">
+                                電腦教室擁有大量設備，包括桌上型電腦及筆記型電腦，並設置了許多軟體和應用程式以支持不同類型的學習和開發需求。<br>
+                                學生在這裡學習軟體開發、圖形設計、多媒體製作以及其他與電腦技術相關的領域。通過練習和實際應用，學生可以更深入地理解並掌握電腦相關技能。
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="mini-map-2 col">
+                        <img src="./img/717.jpg" alt="" class="w-100 ">
+                    </div>
+                </div>
+            </div>
+            <div id="r713" class="content row" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                <div class="intro col-3 h-100 ps-0 pe-3 justify-content-center align-items-center">
+                    <h3 class="w-100 py-3 px-1 mb-3 fw-bold text-center rounded-3">713</h3>
+                    <div class="intro-text w-100 rounded-3">
+                        電腦教室是一個專為學生學習數位技術而設的空間，教室具有現代化的電腦設備，包括電腦、軟體應用、網絡連接和教學資源，這些資源有助於學生深入了解各學科所需要的數位技術。<br>
+                        這裡教授電腦語言、軟體開發、資訊安全、程式應用等課程，能提供實際的操作機會和技術支持，讓學生有豐富的互動學習體驗，培養他們在數位世界中的技能和理解。
+                    </div>
+                    <div id="mini713" class="mini-map show">
+                        <img src="./img/mini-map-mask.png" alt="" class="mini-map-mask w-100">
+                        <img src="./img/713.jpg" alt="" class="w-100 ">
+                    </div>
+                    <dialog id="infoModal">
+                        <div id="small"></div>
+                    </dialog>
+                </div>
+                <div class="intro-box w-100 p-0" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <div class="intro-2 col-8 rounded-3 me-3">
+                        <h3 class="w-100 pt-4 px-1 text-center">713
+                            <div class="intro-text">
+                                電腦教室是一個專為學生學習數位技術而設的空間，教室具有現代化的電腦設備，包括電腦、軟體應用、網絡連接和教學資源，這些資源有助於學生深入了解各學科所需要的數位技術。<br>
+                                這裡教授電腦語言、軟體開發、資訊安全、程式應用等課程，能提供實際的操作機會和技術支持，讓學生有豐富的互動學習體驗，培養他們在數位世界中的技能和理解。
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="mini-map-2 col">
+                        <img src="./img/713.jpg" alt="" class="w-100 ">
+                    </div>
+                </div>
+            </div>
+            <div id="r711" class="content row" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                <div class="intro col-3 h-100 ps-0 pe-3 justify-content-center align-items-center">
+                    <h3 class="w-100 py-3 px-1 mb-3 fw-bold text-center rounded-3">711</h3>
+                    <div class="intro-text w-100 rounded-3">
+                        教室作為學習的中心，提供了基本但關鍵的設施和資源，能確保教學的順利進行，同時提供了一個適合學生學習和老師教學的空間。<br>
+                        投影機和資訊講台的設置能幫助老師講解課程，提升學習效果。讓展示多媒體教材、管理課堂互動變得更加輕鬆，便於教師進行示範並支持多種教學方式。
+                    </div>
+                    <div id="mini711" class="mini-map show">
+                        <img src="./img/mini-map-mask.png" alt="" class="mini-map-mask w-100">
+                        <img src="./img/711.jpg" alt="" class="w-100 ">
+                    </div>
+                    <dialog id="infoModal">
+                        <div id="small"></div>
+                    </dialog>
+                </div>
+                <div class="intro-box w-100 p-0" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <div class="intro-2 col-8 rounded-3 me-3">
+                        <h3 class="w-100 pt-4 px-1 text-center">711
+                            <div class="intro-text">
+                                教室作為學習的中心，提供了基本但關鍵的設施和資源，能確保教學的順利進行，同時提供了一個適合學生學習和老師教學的空間。<br>
+                                投影機和資訊講台的設置能幫助老師講解課程，提升學習效果。讓展示多媒體教材、管理課堂互動變得更加輕鬆，便於教師進行示範並支持多種教學方式。
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="mini-map-2 col">
+                        <img src="./img/711.jpg" alt="" class="w-100 ">
+                    </div>
+                </div>
+            </div>
+            <div id="r709" class="content row" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                <div class="intro col-3 h-100 ps-0 pe-3 justify-content-center align-items-center">
+                    <h3 class="w-100 py-3 px-1 mb-3 fw-bold text-center rounded-3">709</h3>
+                    <div class="intro-text w-100 rounded-3">
+                        陶土教室是一個鼓勵創造力和藝術表現的空間，讓人們探索和體驗陶藝製作的樂趣。教室設有工作台和各種工具，可以學習如何捏陶、製作陶器的技巧，鼓勵學生探索不同形狀、紋理和色彩的應用，展現獨特的藝術風格。<br>
+                        人們可以分享他們的技巧、創作和想法，互相激發靈感。陶土教室可以舉辦陶藝展覽、工作坊和藝術活動，向公眾展示和分享他們的藝術形式。
+                    </div>
+                    <div id="mini709" class="mini-map show">
+                        <img src="./img/mini-map-mask.png" alt="" class="mini-map-mask w-100">
+                        <img src="./img/709.jpg" alt="" class="w-100 ">
+                    </div>
+                    <dialog id="infoModal">
+                        <div id="small"></div>
+                    </dialog>
+                </div>
+                <div class="intro-box w-100 p-0" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <div class="intro-2 col-8 rounded-3 me-3">
+                        <h3 class="w-100 pt-4 px-1 text-center">709
+                            <div class="intro-text">
+                                陶土教室是一個鼓勵創造力和藝術表現的空間，讓人們探索和體驗陶藝製作的樂趣。教室設有工作台和各種工具供學習製作陶器的技巧，鼓勵學生探索不同形狀、紋理和色彩的應用，展現獨特的藝術風格。<br>
+                                人們會分享他們的技巧、創作和想法，互相激發靈感，舉辦陶藝展覽、工作坊和藝術活動，向公眾展示他們的作品。
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="mini-map-2 col">
+                        <img src="./img/709.jpg" alt="" class="w-100 ">
+                    </div>
+                </div>
+            </div>
+            <div id="r707" class="content row" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                <div class="intro col-3 h-100 ps-0 pe-3 justify-content-center align-items-center">
+                    <h3 class="w-100 py-3 px-1 mb-3 fw-bold text-center rounded-3">707</h3>
+                    <div class="intro-text w-100 rounded-3">
+                        大教室適合大型班級，可容納30人以上。寬敞明亮的空間能進行各式活動。設置有投影機和舒適的冷氣，配備完善的資訊講台供老師控制，營造理想的學習環境。<br>
+                        投影機支持多媒體展示，幫助教師傳達課程內容。提供良好的視覺和聽覺體驗，促進互動和學習。
+                    </div>
+                    <div id="mini707" class="mini-map show">
+                        <img src="./img/mini-map-mask.png" alt="" class="mini-map-mask w-100">
+                        <img src="./img/707.jpg" alt="" class="w-100 ">
+                    </div>
+                    <dialog id="infoModal">
+                        <div id="small"></div>
+
+                    </dialog>
+                </div>
+                <div class="intro-box w-100 p-0" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <div class="intro-2 col-8 rounded-3 me-3">
+                        <h3 class="w-100 pt-4 px-1 text-center">707
+                            <div class="intro-text">
+                                大教室適合大型班級，可容納30人以上。寬敞明亮的空間能進行各式活動。設置有投影機和舒適的冷氣，配備完善的資訊講台供老師控制，營造理想的學習環境。<br>
+                                投影機支持多媒體展示，幫助教師傳達課程內容。提供良好的視覺和聽覺體驗，促進互動和學習。
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="mini-map-2 col">
+                        <img src="./img/707.jpg" alt="" class="w-100 ">
+                    </div>
+                </div>
+            </div>
+            <div id="r706" class="content row" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                <div class="intro col-3 h-100 ps-0 pe-3 justify-content-center align-items-center">
+                    <h3 class="w-100 py-3 px-1 mb-3 fw-bold text-center rounded-3">706</h3>
+                    <div class="intro-text w-100 rounded-3">
+                        教室作為學校中學習和教學的主要場所，一個舒適和適合學習的環境是非常重要的，這裡配備了各種設備和資源，以促進教學效果和知識傳遞。
+                        教室內擁有投影機設備和資訊講台，這能幫助老師講解課程並展示多媒體教材，提升學習效果。冷氣系統的設置能讓教室在炎熱的天氣中保持舒適，幫助學生集中精力學習。
+                    </div>
+                    <div id="mini706" class="mini-map show">
+                        <img src="./img/mini-map-mask.png" alt="" class="mini-map-mask w-100">
+                        <img src="./img/706.jpg" alt="" class="w-100 ">
+                    </div>
+                    <dialog id="infoModal">
+                        <div id="small"></div>
+
+                    </dialog>
+                </div>
+                <div class="intro-box w-100 p-0" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <div class="intro-2 col-8 rounded-3 me-3">
+                        <h3 class="w-100 pt-4 px-1 text-center">706
+                            <div class="intro-text">
+                                一般教室作為學校中學習和教學的主要場所，一個舒適和適合學習的環境是非常重要的，這裡配備了各種設備和資源，以促進教學效果和知識傳遞。<br>
+                                教室內擁有投影機設備和資訊講台，這能幫助老師講解課程並展示多媒體教材，提升學習效果。冷氣系統的設置能讓教室在炎熱的天氣中保持舒適，幫助學生集中精力學習。
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="mini-map-2 col">
+                        <img src="./img/706.jpg" alt="" class="w-100 ">
+                    </div>
+                </div>
+            </div>
+            <div id="r720" class="content row" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                <div class="intro col-3 h-100 ps-0 pe-3 justify-content-center align-items-center">
+                    <h3 class="w-100 py-3 px-1 mb-3 fw-bold text-center rounded-3">719/720</h3>
+                    <div class="intro-text w-100 rounded-3">
+                        品管採購辦公室扮演著確保學校運作順利的重要角色，負責確保學校內部運作的流暢性，包括教學資源的採購、維護和更新。品管部門把守學校所使用的產品和服務符合相關標準、滿足教學和行政需求。<br>
+                        外部合作也是辦公室工作的一環，簽訂合約、與供應商進行溝通和協商，以及採購流程中的文件管理和記錄保留。他們也負責檢查和測試學校所用的設備、用品等，確保它們符合標準，並採取必要的品質改進措施。
+                    </div>
+                    <div id="mini720" class="mini-map show">
+                        <img src="./img/mini-map-mask.png" alt="" class="mini-map-mask w-100">
+                        <img src="./img/720.jpg" alt="" class="w-100 ">
+                    </div>
+                    <dialog id="infoModal">
+                        <div id="small"></div>
+                    </dialog>
+                </div>
+                <div class="intro-box w-100 p-0" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <div class="intro-2 col-8 rounded-3 me-3">
+                        <h3 class="w-100 pt-4 px-1 text-center">719/720
+                            <div class="intro-text">
+                                品管採購辦公室扮演著確保學校運作順利的重要角色，負責確保學校內部運作的流暢性，包括教學資源的採購、維護和更新。品管部門把守學校所使用的產品和服務符合相關標準、滿足教學和行政需求。<br>
+                                外部合作也是辦公室工作的一環，簽訂合約、與供應商進行溝通和協商，以及採購流程中的文件管理和記錄保留。他們也負責檢查和測試學校所用的設備、用品等，確保它們符合標準，並採取必要的品質改進措施。
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="mini-map-2 col">
+                        <img src="./img/720.jpg" alt="" class="w-100 ">
+                    </div>
+                </div>
+            </div>
+            <div id="r716" class="content row" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                <div class="intro col-3 h-100 ps-0 pe-3 justify-content-center align-items-center">
+                    <h3 class="w-100 py-3 px-1 mb-3 fw-bold text-center rounded-3">716/718</h3>
+                    <div class="intro-text w-100 rounded-3">
+                        系學會教室是一個支持學生活動的重要場所，這個空間配置有投影幕和白板，提供了舉辦小型講座、研討會和學術演講的理想環境。投影幕和白板技術促進了教學，同時也支持團隊合作和知識分享。<br>
+                        此外，教室設有會議桌和椅子，有助於團隊討論和合作，同時也能提供適合參與者互動和參與的環境，為小型團隊會議準備了理想的場所。
+                    </div>
+                    <div id="mini716" class="mini-map show">
+                        <img src="./img/mini-map-mask.png" alt="" class="mini-map-mask w-100">
+                        <img src="./img/718.jpg" alt="" class="w-100 ">
+                    </div>
+                    <dialog id="infoModal">
+                        <div id="small"></div>
+                    </dialog>
+                </div>
+                <div class="intro-box w-100 p-0" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <div class="intro-2 col-8 rounded-3 me-3">
+                        <h3 class="w-100 pt-4 px-1 text-center">716/718
+                            <div class="intro-text">
+                                系學會教室是一個支持學生活動的重要場所，這個空間配置有投影幕和白板，提供了舉辦小型講座、研討會和學術演講的理想環境。<br>
+                                教室設有會議桌和椅子，有助於團隊討論和合作，同時也能提供適合參與者互動和參與的環境，為小型團隊會議準備了理想的場所。
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="mini-map-2 col">
+                        <img src="./img/718.jpg" alt="" class="w-100 ">
+                    </div>
+                </div>
+            </div>
+            <div id="r708" class="content row" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                <div class="intro col-3 h-100 ps-0 pe-3 justify-content-center align-items-center">
+                    <h3 class="w-100 py-3 px-1 mb-3 fw-bold text-center rounded-3">708/710/712/714</h3>
+                    <div class="intro-text w-100 rounded-3">
+                        小型教室設有投影機、冷氣和便利的資訊講台，為小班授課提供良好學習環境。投影機能展示多媒體內容，幫助教師與學生互動。<br>
+                        這裡營造了較為親密的氛圍，有助於小班授課，提供更多互動和個人化學習機會，是討論與學術聚會的好場所。
+                    </div>
+                    <div id="mini708" class="mini-map show">
+                        <img src="./img/mini-map-mask.png" alt="" class="mini-map-mask w-100">
+                        <img src="./img/708.jpg" alt="" class="w-100 ">
+                    </div>
+                    <dialog id="infoModal">
+                        <div id="small"></div>
+                    </dialog>
+                </div>
+                <div class="intro-box w-100 p-0" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <div class="intro-2 col-8 rounded-3 me-3">
+                        <h3 class="w-100 pt-4 px-1 text-center">708/710/712/714
+                            <div class="intro-text">
+                                小型教室設有投影機、冷氣和便利的資訊講台，為小班授課提供良好學習環境。投影機能展示多媒體內容，幫助教師與學生互動。<br>
+                                這裡營造了較為親密的氛圍，有助於小班授課，提供更多互動和個人化學習機會，是討論與學術聚會的好場所。
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="mini-map-2 col">
+                        <img src="./img/708.jpg" alt="" class="w-100 ">
+                    </div>
+                </div>
+            </div>
+            <div id="r701" class="last-room content row" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                <div class="intro col-3 h-100 ps-0 pe-3 justify-content-center align-items-center">
+                    <h3 class="w-100 py-3 px-1 mb-3 fw-bold text-center rounded-3">701-705</h3>
+                    <div class="intro-text w-100 rounded-3">
+                        系所辦公室是學生活動的籌劃中心，旨在連結並服務該學科的學生群體。這個辦公室致力於促進學術和社交交流，並提供學生在特定學科中所需的支持和資源。<br>
+                        這裡包括設備齊全的閱讀區域、討論區、電腦和影印設備。此外，辦公室能舉辦學術研討會、工作坊和專題講座，提供給學生一個共享知識和經驗的平台。
+                    </div>
+                    <div id="mini701" class="mini-map show">
+                        <img src="./img/mini-map-mask.png" alt="" class="mini-map-mask w-100">
+                        <img src="./img/701.jpg" alt="" class="w-100 ">
+                    </div>
+                    <dialog id="infoModal">
+
+                        <div id="small"></div>
+                    </dialog>
+                </div>
+                <div class="intro-box w-100 p-0" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <div class="intro-2 col-8 rounded-3 me-3">
+                        <h3 class="w-100 pt-4 px-1 text-center">701-705
+                            <div class="intro-text">
+                                系所辦公室是學生活動的籌劃中心，設置有設備齊全的閱讀區域、討論區、電腦和影印設備。辦公室旨在連結並服務該學科的學生群體，並提供學生在特定學科中所需的支持和資源。
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="mini-map-2 col">
+                        <img src="./img/701.jpg" alt="" class="w-100 ">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="flex-column justify-content-center align-items-center">
+            <div class="footer-box justify-content-center align-items-center">
+                <h5>製作團隊 - 現在大家都不說話</h5>
+                <iconify-icon class="line" icon="pepicons-pencil:line-y"></iconify-icon>
+                <h5>許莛湘</h5>
+                <iconify-icon class="line" icon="pepicons-pencil:line-y"></iconify-icon>
+                <h5>張雅婷</h5>
+                <iconify-icon class="line" icon="pepicons-pencil:line-y"></iconify-icon>
+                <h5>張寶聰</h5>
+                <iconify-icon class="line" icon="pepicons-pencil:line-y"></iconify-icon>
+                <h5>劉晏如</h5>
+                <iconify-icon class="line" icon="pepicons-pencil:line-y"></iconify-icon>
+                <h5>葉佳玲</h5>
+                <a class="connect" href="https://www.iciil.nchu.edu.tw/course.php?typesn=44" target="_blank">聯絡興大</a>
+            </div>
+            <div class="footer-box-mob flex-column justify-content-center align-items-center">
+                <div class="footer-mob-up d-flex justify-content-center align-items-center">
+                    <h5>製作團隊 - 現在大家都不說話</h5>
+                    <iconify-icon class="line" icon="pepicons-pencil:line-y"></iconify-icon>
+                    <a class="connect" href="https://www.iciil.nchu.edu.tw/course.php?typesn=44"
+                        target="_blank">聯絡興大</a>
+                </div>
+                <div class="footer-mob-down d-flex justify-content-center align-items-center">
+                    <h5>許莛湘</h5>
+                    <iconify-icon class="line" icon="pepicons-pencil:line-y"></iconify-icon>
+                    <h5>張雅婷</h5>
+                    <iconify-icon class="line" icon="pepicons-pencil:line-y"></iconify-icon>
+                    <h5>張寶聰</h5>
+                    <iconify-icon class="line" icon="pepicons-pencil:line-y"></iconify-icon>
+                    <h5>劉晏如</h5>
+                    <iconify-icon class="line" icon="pepicons-pencil:line-y"></iconify-icon>
+                    <h5>葉佳玲</h5>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script type="importmap">
+            {
+            "imports": {
+                "three": "https://unpkg.com/three@latest/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@latest/examples/jsm/"
+            }
+            }
+        </script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        // ==================== MENU ====================
+        const leftBtn = document.querySelector('.left-btn');
+        const rightBtn = document.querySelector('.right-btn');
+        const view = document.querySelector('.menu-view');
+        const rooms = document.querySelector('.rooms');
+
+        rightBtn.addEventListener('click', scrollRight);
+        leftBtn.addEventListener('click', scrollLeft);
+
+        function scrollRight() {
+            const allLength = 75.7 * 13 + 8.5 * 3;
+            const viewLength = view.clientWidth;
+            const leftMove = Math.abs(parseInt(window.getComputedStyle(rooms, null).left));// 取得rooms left的值
+            if (allLength < viewLength) return;
+            if (leftMove + viewLength + 75.7 * 3 >= allLength) {
+                rooms.style.left = '-' + (allLength - viewLength) + 'px';
+            } else {
+                rooms.style.left = '-' + (leftMove + (75.7 * 3)) + 'px'
+            }
+        };
+
+        function scrollLeft() {
+            const allLength = 75.7 * 13 + 8.5 * 3;
+            const viewLength = view.clientWidth;
+            const leftMove = Math.abs(parseInt(window.getComputedStyle(rooms, null)?.left));// 取得rooms left的值
+            if (allLength < viewLength) return;
+            if (leftMove + viewLength - (75.7 * 3) < viewLength) {
+                rooms.style.left = '0px';
+            } else {
+                rooms.style.left = '-' + (leftMove - (75.7 * 3)) + 'px'
+            }
+        };
+    </script>
+    <script type="module">
+        import * as THREE from 'three';
+        import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+        // 新增場景
+        const scene = new THREE.Scene();
+
+        // 新增攝影機
+        let camera;
+        // 將<canvas>加入HTML(map)
+        const pos = document.getElementById('map');
+        // 新增渲染器
+        const renderer = new THREE.WebGLRenderer({
+            // antialias抗鋸齒 alpha為去背
+            antialias: true,
+            alpha: true
+        });
+        pos.appendChild(renderer.domElement);
+
+        // 新增GLTFLoader
+        const cameraloader = new GLTFLoader();
+        const animeloader = new GLTFLoader();
+        const roomloader = new GLTFLoader();
+        const room2loader = new GLTFLoader();
+        const room3loader = new GLTFLoader();
+        let mixer, cameramixer;
+        // 這邊的clips=[]很重要對於一堆動畫而言
+        let clips = []
+        setTimeout(() => {
+            animeloader.load('./model/anime.glb', (object) => {
+                scene.add(object.scene)
+                mixer = new THREE.AnimationMixer(object.scene)
+                clips = object.animations
+
+                clips.forEach((clip) => {
+                    const action = mixer.clipAction(clip)
+                    action.play()
+                })
+
+
+            })
+            cameraloader.load(
+                './model/camera.glb',
+                (object) => {
+                    let all = object.scene
+                    let anime = object.animations
+                    scene.add(all)
+                    camera = object.cameras[0];
+
+                    // clip這邊的才是控制物體動畫的關鍵
+                    const Cameraclip = object.animations[0];
+
+                    // 這個mixer是要找到這個檔案的全部物體
+                    let cameramixer = new THREE.AnimationMixer(all);
+                    //把CLIP變成能用action操作
+                    const cameraaction = cameramixer.clipAction(Cameraclip);
+                    createAnimation(cameramixer, cameraaction, Cameraclip);
+
+                    // 啟動特定的action
+                    cameraaction.play();
+
+                }
+
+            );
+            room3loader.load(
+                './model/room3.glb', (object) => {
+                    scene.add(object.scene)
+                }
+            )
+            room2loader.load(
+                './model/room2.glb', (object) => {
+                    scene.add(object.scene)
+                }
+            )
+            roomloader.load(
+                './model/room1.glb',
+                (object) => {
+                    scene.add(object.scene)
+
+
+                    const loading = document.getElementById('loading-mask');
+                    loading.classList.add('hide');
+                    const loadinganime = document.getElementById('loading-mask-2')
+                    const loadinganime2 = document.getElementById('loading-bar-2')
+                    setTimeout(() => {
+                        loadinganime.style.animationPlayState = 'running'
+                        loadinganime2.style.animationPlayState = 'running'
+                        setTimeout(() => {
+                            loadinganime.classList.add('hide');
+                        }, 1500)
+                    }, 100)
+
+                },
+                // 以下為loading相關
+                function (load) {
+                    const percent = load.loaded / load.total
+                    const loading_text = document.getElementById('loading-text')
+                    const loading_fill = document.getElementById('loading-fill')
+
+                    loading_text.innerHTML = Math.floor(percent * 100) + '%'
+                    loading_fill.style.width = percent * 282 + "px"
+                }
+            )
+
+
+        }, 800)
+
+        const clock = new THREE.Clock();
+
+        function createAnimation(cameramixer, cameraaction, Cameraclip) {
+            let proxy = {
+                get time() {
+                    return cameramixer.time;
+                },
+                set time(value) {
+                    cameraaction.paused = false;
+                    cameramixer.setTime(value);
+                    cameraaction.paused = true;
+                    cameramixer.timeScale = 0.975;
+                }
+            };
+            let scrollingTL = gsap.timeline({
+
+                scrollTrigger: {
+                    trigger: ".target",
+                    start: "top top",
+                    endTrigger: ".last-room",
+                    end: "bottom bottom",
+                    pin: pos,
+                    scrub: true,
+                    onUpdate: function () {
+                    }
+                }
+
+            })
+
+                .to(proxy, {
+                    time: Cameraclip.duration,
+                    ease: "none",
+                })
+
+                // 行動版捲動提示消失
+                .to('.mark', {
+                    scrollTrigger: {
+                        scrollTrigger: '.mark',
+                        start: "top top",
+                        end: "+=500",
+                        scrub: true,
+                    },
+                    css: { opacity: 0 },
+                    ease: "none",
+                }
+                )
+        }
+
+        const mapView = document.querySelector('.map-view')
+        // 設置render loop(animate loop)
+        function animate() {
+            // size()
+            requestAnimationFrame(animate);
+            const delta = clock.getDelta()
+            if (mixer) mixer.update(delta);
+            if (camera) renderer.render(scene, camera);
+
+        }
+        const main = document.querySelector('main');
+        const body = document.querySelector('body');
+        function resize() {
+            if (camera) camera.updateProjectionMatrix();
+            renderer.setSize(mapView.offsetWidth, mapView.offsetHeight * 3);
+            ScrollTrigger.refresh();
+        }
+        resize();
+        animate();
+        window.addEventListener('resize', resize)
+
+    </script>
+    <script type="module">
+        import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
+        import * as THREE from 'three';
+        import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+        const roomAll = ['701', '706', '707', '708', '709', '711', '713', '716', '717', '720', '721', '722', '723']
+
+        const pos2 = document.getElementById('small');
+        let labelRenderer;
+        // 新增場景
+        const scene2 = new THREE.Scene();
+        // 新增攝影機
+        const camera2 = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        // 設置攝影機位置
+        camera2.position.set(0, 7, 5);
+        camera2.rotation.set(-0.5, 0, 0)
+
+        // 新增渲染器
+        const renderer2 = new THREE.WebGLRenderer({
+            alpha: true,
+            antialias: true,
+        });
+
+        // 新增GLTFLoader
+        const loader2 = new GLTFLoader();
+        // 匯入物件(路徑, 加載完成後呼叫函數
+        loader2.load(
+            './model/index.glb',
+            (object) => {
+                let all = object.scene
+                let root = object.scenes[0]
+                const root2 = root.children
+                scene2.add(all)
+
+                // 不能直接selectAll因為排序不對
+                const mini701 = document.getElementById('mini701')
+                const mini706 = document.getElementById('mini706')  
+                const mini707 = document.getElementById('mini707') 
+                const mini708 = document.getElementById('mini708') 
+                const mini709 = document.getElementById('mini709') 
+                const mini711 = document.getElementById('mini711') 
+                const mini713 = document.getElementById('mini713') 
+                const mini716 = document.getElementById('mini716') 
+                const mini717 = document.getElementById('mini717') 
+                const mini720 = document.getElementById('mini720') 
+                const mini721 = document.getElementById('mini721') 
+                const mini722 = document.getElementById('mini722') 
+                const mini723 = document.getElementById('mini723')
+
+                // 以下為標籤寫在LOAD裡不然會因為不同步綁不到
+                // 各房間名稱標示
+                const Div701 = document.createElement('div');
+                const Div706 = document.createElement('div');
+                const Div707 = document.createElement('div');
+                const Div708 = document.createElement('div');
+                const Div709 = document.createElement('div');
+                const Div711 = document.createElement('div');
+                const Div713 = document.createElement('div');
+                const Div716 = document.createElement('div');
+                const Div717 = document.createElement('div');
+                const Div720 = document.createElement('div');
+                const Div721 = document.createElement('div');
+                const Div722 = document.createElement('div');
+                const Div723 = document.createElement('div');
+
+                // 所在位置指示pin
+                const pin701 = document.createElement('div')
+                const pin706 = document.createElement('div')
+                const pin707 = document.createElement('div')
+                const pin708 = document.createElement('div')
+                const pin709 = document.createElement('div')
+                const pin711 = document.createElement('div')
+                const pin713 = document.createElement('div')
+                const pin716 = document.createElement('div')
+                const pin717 = document.createElement('div')
+                const pin720 = document.createElement('div')
+                const pin721 = document.createElement('div')
+                const pin722 = document.createElement('div')
+                const pin723 = document.createElement('div')
+
+                const roomArr = [
+                    {
+                        el: Div701,
+                        x: -0.2,
+                        y: 0.3,
+                        z: 1.1,
+                        pin: pin701,
+                        mini: mini701,
+                        piny: 0.6,
+                        pinx: -0.2
+                    },
+                    {
+                        el: Div706,
+                        x: -1.2,
+                        y: 0.3,
+                        z: 0.5,
+                        pin: pin706,
+                        mini: mini706,
+                        piny: 0.6,
+                        pinx: -1.2
+                    },
+                    {
+                        el: Div707,
+                        x: -1.2,
+                        y: 0.3,
+                        z: 0,
+                        pin: pin707,
+                        mini: mini707,
+                        piny: 0.6,
+                        pinx: -1.2
+                    },
+                    {
+                        el: Div708,
+                        x: -0.7,
+                        y: 0.3,
+                        z: -0.6,
+                        pin: pin708,
+                        mini: mini708,
+                        piny: 0.6,
+                        pinx: -0.7
+                    },
+                    {
+                        el: Div709,
+                        x: -0.9,
+                        y: 0.3,
+                        z: -0.9,
+                        pin: pin709,
+                        mini: mini709,
+                        piny: 0.6,
+                        pinx: -0.9
+                    },
+                    {
+                        el: Div711,
+                        x: -0.6,
+                        y: 0.3,
+                        z: -0.9,
+                        pin: pin711,
+                        mini: mini711,
+                        piny: 0.6,
+                        pinx: -0.6
+                    },
+                    {
+                        el: Div713,
+                        x: -0.3,
+                        y: 0.3,
+                        z: -0.9,
+                        pin: pin713,
+                        mini: mini713,
+                        piny: 0.6,
+                        pinx: -0.3
+                    },
+                    {
+                        el: Div716,
+                        x: -0.3,
+                        y: 0.3,
+                        z: -0.6,
+                        pin: pin716,
+                        mini: mini716,
+                        piny: 0.6,
+                        pinx: -0.3
+                    },
+                    {
+                        el: Div717,
+                        x: 0.3,
+                        y: 0.3,
+                        z: -0.9,
+                        pin: pin717,
+                        mini: mini717,
+                        piny: 0.6,
+                        pinx: 0.3
+                    },
+                    {
+                        el: Div720,
+                        x: 0.2,
+                        y: 0.3,
+                        z: -0.6,
+                        pin: pin720,
+                        mini: mini720,
+                        piny: 0.6,
+                        pinx: 0.2
+                    },
+                    {
+                        el: Div721,
+                        x: 1,
+                        y: 0.3,
+                        z: -0.4,
+                        pin: pin721,
+                        mini: mini721,
+                        piny: 0.5,
+                        pinx: 1.1
+                    },
+                    {
+                        el: Div722,
+                        x: 1,
+                        y: 0.3,
+                        z: 0,
+                        pin: pin722,
+                        mini: mini722,
+                        piny: 0.4,
+                        pinx: 1.1
+                    },
+                    {
+                        el: Div723,
+                        x: 1,
+                        y: 0.3,
+                        z: 0.5,
+                        pin: pin723,
+                        mini: mini723,
+                        piny: 0.4,
+                        pinx: 1.1
+                    }
+                ]
+
+                roomArr.forEach(((item, index) => {
+                    // 房間編號設定
+                    item.el.textContent = roomAll[index];
+                    item.el.className = 'label';
+                    var label = new CSS2DObject(item.el);
+                    label.position.set(item.x, item.y, item.z);
+                    label.center.set(0, 0, 0);
+                    root2[0].children[(index + 1)].add(label);
+                    label.layers.set(0);
+                    
+                    // 現在位置標示設定
+                    item.pin.classList.add('pin')
+                    item.pin.innerHTML = '<iconify-icon icon="mdi:rabbit-variant"></iconify-icon>'
+                    var mark = new CSS2DObject(item.pin);
+                    mark.position.set(item.pinx, item.piny, item.z);
+                    mark.center.set(0, 0, 0);
+                    root2[0].children[(index + 1)].add(mark);
+                    mark.layers.set(0);
+                    item.mini.addEventListener('click', () => {
+                        item.pin.classList.add('show');
+                    })
+                }))
+            },
+        )
+
+        // POS上面有宣告這裡的用途主要為將three.js綁在固定區域 label的為標籤的  
+        pos2.appendChild(renderer2.domElement);
+        labelRenderer = new CSS2DRenderer();
+
+        labelRenderer.domElement.style.position = 'absolute';
+        // labelrender的pointer如果不設為NONE的話會點不到模型
+        labelRenderer.domElement.style.pointer = 'none'
+        labelRenderer.domElement.style.top = '0px';
+        pos2.appendChild(labelRenderer.domElement);
+
+        // 定位滑鼠位置所需要的宣告
+        const raycaster = new THREE.Raycaster();
+        const pointer = new THREE.Vector2();
+
+        function onmodelclick(event) {
+            // 將滑鼠位置設定為裝置座標。x 和 y 方向取的範圍是 (-1 to +1)
+            pointer.x = (event.layerX / pos2.offsetWidth) * 2 - 1;
+            pointer.y = - (event.layerY / pos2.offsetHeight) * 2 + 1;
+            raycaster.setFromCamera(pointer, camera2);
+            // raycaster獲得模型裡的物件
+            var intersects = raycaster.intersectObjects(scene2.children);
+            // 點擊到的物件陣列裡是否有系學會教室
+            if (roomAll.includes(intersects[0]?.object?.material?.name ?? '')) {
+                location.href = `room.html#r${intersects[0].object.material.name}`;
+                infoModal.close();
+                const pins = document.querySelectorAll('.pin')
+                pins.forEach((item) => {
+                    item.classList.remove('show');
+                });
+            }
+        }
+
+        function pointermove(event) {
+            // 將滑鼠位置設定為裝置座標。x 和 y 方向取的範圍是 (-1 to +1)
+            pointer.x = (event.layerX / pos2.offsetWidth) * 2 - 1;
+            pointer.y = - (event.layerY / pos2.offsetHeight) * 2 + 1;
+            raycaster.setFromCamera(pointer, camera2);
+
+            // raycaster獲得模型裡的物件
+            var intersects = raycaster.intersectObjects(scene2.children);
+
+            if (roomAll.includes(intersects[0]?.object?.material?.name ?? '')) {
+                pos2.style.cursor = 'pointer';
+            } else {
+                pos2.style.cursor = 'auto';
+            }
+        }
+        let INTERSECTED;
+        function onPointerMove(event) {
+            // 將滑鼠位置設定為裝置座標。x 和 y 方向取的範圍是 (-1 to +1)
+            pointer.x = (event.layerX / pos2.offsetWidth) * 2 - 1;
+            pointer.y = - (event.layerY / pos2.offsetHeight) * 2 + 1;
+            raycaster.setFromCamera(pointer, camera2);
+            const intersects = raycaster.intersectObjects(scene2.children);
+            // 讓滑鼠指到的東西變色,沒指到的會回到原本狀態
+            if (intersects.length > 0) {
+
+                if (INTERSECTED != intersects[0].object) {
+
+
+                    if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
+                    INTERSECTED = intersects[0].object;
+                    INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
+                    INTERSECTED.material.emissive.setHex(0xff0000);
+
+                }
+
+            } else {
+
+                if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
+
+                INTERSECTED = null;
+
+            }
+
+            renderer2.render(scene2, camera2);
+
+        }
+        pos2.addEventListener('pointermove', pointermove);
+        pos2.addEventListener('pointermove', onPointerMove);
+        pos2.addEventListener('click', onmodelclick);
+        // // 新增控制器
+        const controls = new OrbitControls(camera2, labelRenderer.domElement);
+        function resize() {
+            if (window.innerWidth >= 1100) {
+                camera2.position.set(0, 7, 5);
+                labelRenderer.setSize(1000, 600);
+                renderer2.setSize(1000, 600);
+                camera2.aspect = pos2.offsetWidth / pos2.offsetHeight;
+
+            } else {
+                camera2.position.set(0, 6, 5);
+                labelRenderer.setSize(550, 300);
+                renderer2.setSize(550, 300);
+                camera2.aspect = pos2.offsetWidth / pos2.offsetHeight;
+            }
+            camera2.updateProjectionMatrix();
+        }
+        // 設置render loop(animate loop)
+        function animate2() {
+            requestAnimationFrame(animate2);
+            renderer2.render(scene2, camera2);
+            labelRenderer.render(scene2, camera2);
+        }
+        animate2();
+        resize();
+        window.addEventListener('resize', resize);
+        // ==================== 小地圖 ====================
+        let btn = document.querySelectorAll(".show")
+        let infoModal = document.querySelector("#infoModal");
+        let close = document.querySelector("#close");
+        //   此處為非同步 async的function完成後 才會往下執行
+        btn.forEach((b) => {
+            b.addEventListener("click", function () {
+                openModal();
+                resize();
+            })
+        });
+
+        async function openModal() {
+            infoModal.showModal();
+        }
+
+        close.addEventListener("click", function () {
+            infoModal.close();
+            const pins = document.querySelectorAll('.pin')
+            pins.forEach((item) => {
+                item.classList.remove('show');
+            });
+        })
+
+
+    </script>
+</body>
+
+</html>
